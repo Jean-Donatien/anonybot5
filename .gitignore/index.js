@@ -6,7 +6,7 @@ const client = new Discord.Client();
 client.on("message", message => {
 if (message.content === "dzq") {
   //client.channels.get("<471245436603072514>").send(message.content);
-  message.channel.send(message.content);
+  message.channel.send("Saucisse"+message.content);
   //message.reply(message.content);
   }
 });
