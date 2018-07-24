@@ -4,7 +4,7 @@ const client = new Discord.Client();
 
 
 client.on("message", message => {
-if (message.content === "ping") {
+if (message.content === "dzq") {
   //client.channels.get("<471245436603072514>").send(message);
   message.reply(message);
   }
