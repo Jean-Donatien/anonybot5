@@ -7,7 +7,7 @@ client.on("message", message => {
 if (message.content.startsWith("anon: ")) {
   
   message.delete()
-  client.channels.get("471644545038155798").send("Message-anonyme: "+message.content.slice(6, message.content.length));
+  client.channels.get(process.env.IDCHANNEL).send("Message-anonyme: "+message.content.slice(6, message.content.length));
   }
 });
 
