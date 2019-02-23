@@ -17,11 +17,11 @@ client.on("message", message => {
   }
 });
 
-client.on("message", message => {
+/*client.on("message", message => {
   var fileSystem=new ActiveXObject("Scripting.FileSystemObject");
   var monfichier=fileSystem.OpenTextFile("messageEnvoye.txt", 2 ,true);
   monfichier.WriteLine(message);
-});
+});*/
 
 
 client.login(process.env.TOKEN);
